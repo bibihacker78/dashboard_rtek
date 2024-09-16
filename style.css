@@ -109,7 +109,6 @@ small {
  }
 
 aside .top {
-    background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -148,6 +147,7 @@ aside .sidebar a {
     align-items: center;
     position: relative;
     height: 3.7rem;
+    width: 45%;
     transition: all 300ms ease;
 
 }
@@ -368,4 +368,130 @@ main .recent-order a{
     grid-template-columns: 2.6rem auto ;
     gap: 1rem;
     margin-bottom: 1rem;
+}
+
+/* */
+.right .sales-analytics h2 {
+    margin-top: 1.5rem;
+}
+.right .sales-analytics .item {
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1.4rem var(--card-padding);
+    margin-bottom: 1rem;
+    border-radius: var(--border-raduis-3);
+    margin: 1rem;
+    
+}
+.right .sales-analytics .item .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 0;   
+    width: 100%;
+}
+.right .sales-analytics .item .icon {
+    padding: 0.6rem;
+    color: var(--color-white);
+    background:red ;
+    border-radius: 50%;
+    display: flex;
+}
+/*                                  */
+.right .sales-analytics .add-product {
+    border: 2px dashed var(--color-primary);
+    background: none;
+    color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.right .sales-analytics .add-product div{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem ;
+}
+
+/*  MEDIA QUERIE  */
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 94%;
+        grid-template-columns: 7rem auto 23rem;
+    }
+    aside .logo{
+      padding-left: 1.8rem;
+    } 
+    aside .sidebar h3{
+        display: none;
+    }
+    aside .sidebar a{
+        width: 5.6rem;
+    }
+    aside .sidebar a:last-child {
+        position: relative;
+        margin-top: 1.8rem;
+
+    }
+    main .insights {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    main .recent-order {
+        width: 94%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 2rem 0 0 8.8rem;
+    }
+    main .recent-order table {
+        width: 83vw;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        width: 100%;
+        background-color: red;
+    }
+    aside {
+        position: fixed;
+        left: 0;
+        background: var(--color-white);
+        width: 18rem;
+        z-index: 3;
+        box-shadow: 1rem 3rem 4rem var(--color-light);
+        height: 100vh;
+        padding-right: var(--card-padding);
+        display: none;
+
+    }
+    aside .sidebar a {
+        width: 100%;
+        height: 3.4rem;
+    }
+    aside .sidebar a:last-child{
+        position: absolute;
+        bottom: 5rem;
+    }
+    aside .close {
+        display: inline-block;
+        cursor: pointer;
+    }
+    main {
+        margin-top: 8rem;
+        padding:0 1rem ;
+    }
+    main .recent-order {
+        position: relative;
+        margin: 3rem 0 0 0;
+        width: 100%;
+    }
+    
+
+    
 }
