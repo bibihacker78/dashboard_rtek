@@ -302,3 +302,70 @@ main .recent-order a{
     margin: 1rem auto;
     color: var(--color-primary);
 }
+/*RIGHT */
+
+.right {
+    margin-top: 1.4rem;
+}
+.right .top {
+    display: flex;
+    justify-content: end;
+    gap:2rem;
+}
+.right .top button{
+    display: none;
+}
+.right .theme-toggler {
+    background-color: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-raduis-1);
+}
+.right .theme-toggler span {
+    font-size: 1.4rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.right .theme-toggler span.act {
+    background: var(--color-primary) ;
+    color: white;
+    border-radius: var(--border-raduis-1);
+
+}
+
+.right .top .profile{
+    display: flex;
+    gap: 2rem;
+    text-align: right;
+}
+
+/* RECENT UPDATES */
+.right .recent-updates {
+    margin: 1rem;
+}
+.right .recent-updates h2{
+    margin-bottom: 0.8rem;
+}
+.right .recent-updates .updates {
+    background: white;
+    border-radius: var(--border-raduis-3);
+    padding: 1.7rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+.right .recent-updates .updates:hover{
+    box-shadow: none ;
+}
+.right .recent-updates .updates .update {
+    display: grid;
+    grid-template-columns: 2.6rem auto ;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
