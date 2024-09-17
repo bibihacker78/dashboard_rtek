@@ -147,7 +147,7 @@ aside .sidebar a {
     align-items: center;
     position: relative;
     height: 3.7rem;
-    width: 45%;
+    width: 40%;
     transition: all 300ms ease;
 
 }
@@ -235,6 +235,7 @@ main .insights h3 {
     margin: 1rem 0 0.6rem;
     font-size: 1rem;
 }
+/*
 main .insights .progress {
     position: relative;
     width: 92px;
@@ -269,7 +270,7 @@ main .insights small{
     margin-top: 1.3rem;
     display: block;
 }
-
+*/
 /*                               */ 
 main .recent-order {
     margin-bottom: 0.8rem;
@@ -456,11 +457,11 @@ main .recent-order a{
 @media screen and (max-width:768px) {
     .container{
         width: 100%;
-        background-color: red;
+        grid-template-columns: 1fr;
     }
     aside {
         position: fixed;
-        left: 0;
+        left: -100;
         background: var(--color-white);
         width: 18rem;
         z-index: 3;
@@ -468,10 +469,19 @@ main .recent-order a{
         height: 100vh;
         padding-right: var(--card-padding);
         display: none;
+        animation: showMenu 400ms ease forwards ;
 
     }
+    @keyframes showMenu {
+        to {
+            left: 0;
+        }
+        
+    }
+
+
     aside .sidebar a {
-        width: 100%;
+        width: 96%;
         height: 3.4rem;
     }
     aside .sidebar a:last-child{
@@ -491,7 +501,39 @@ main .recent-order a{
         margin: 3rem 0 0 0;
         width: 100%;
     }
-    
+    main .recent-order table {
+        width: 100%;
+        margin: 0;
+    }
+    .right {
+        width: 94%;
+        margin: 0 auto 4rem;
+    }
+    .right .top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        align-items: center;
+        padding: 0 0.8rem;
+        background: var(--color-white);
+        width: 100%;
+        margin: 0;
+        z-index: 2;
+        box-shadow: 0 1rem 1rem var(--color-light) ;
+    }
+    .right .top .theme-toggler{
+        width: 4.4rem;
+        position: absolute;
+        left: 66%;
+    }
+    .right .top button {
+        display: inline-block;
+        background: none;
+        cursor: pointer;
+        position: absolute;
+        left: 1rem;
+        color: var(--color-dark);
+    }
 
     
 }
