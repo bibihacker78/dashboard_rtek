@@ -87,7 +87,7 @@
                             <div class="middle">
                                 <div class="left">
                                     <h3> Total ophtalmologues</h3>
-                                    <h1>54</h1>
+                                    <h1 id="totalCount"> </h1>
                                 </div>
                                 <!--
                                 <div class="progress">
@@ -107,7 +107,7 @@
                             <div class="middle">
                                 <div class="left">
                                     <h3>Total patient</h3>
-                                    <h1>123</h1>
+                                    <h1 id="totalCountUser"></h1>
                                 </div>
                                <!-- <div class="progress">
                                     <svg>
@@ -125,7 +125,7 @@
                             <div class="middle">
                                 <div class="left">
                                     <h3>Total test effectué</h3>
-                                    <h1>233</h1>
+                                    <h1>10</h1>
                                 </div>
                               <!--  <div class="progress">
                                     <svg>
@@ -148,53 +148,15 @@
                         <a href="#">Voir plus</a>
                         <thead>
                             <tr>
-                                <th>Ophtalmologues</th>
                                 <th>Patients</th>
+                                <th>Ophtalmologues</th>
                                 <th>Date</th>
                                 <th>État</th>
                                 <th></th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>docteur</td>
-                                <td>franck</td>
-                                <td>23/08/2024</td>
-                                <td class="warning">terminé</td>
-                                <td class="primary">Details</td>
+                        <tbody id="statutRdv">
 
-                            </tr>
-                            <tr>
-                                <td>docteur</td>
-                                <td>franck</td>
-                                <td>23/08/2024</td>
-                               
-                                <td class="warning">terminé</td>
-                                <td class="primary">Details</td>
-                            </tr>
-                            <tr>
-                                <td>docteur</td>
-                                <td>franck</td>
-                                <td>03/10/2024</td>
-                               
-                                <td class="warning">terminé</td>
-                                <td class="primary">Details</td>
-                            </tr>
-                            <tr>
-                                <td>docteur</td>
-                                <td>franck</td>
-                                <td>13/09/2024</td>
-                                <td class="warning">terminé</td>
-                                <td class="primary">Details</td>
-                            </tr>
-                            <tr>
-                                <td>docteur</td>
-                                <td>franck</td>
-                                <td>23/12/2024</td>
-                               
-                                <td class="warning">terminé</td>
-                                <td class="primary">Details</td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -313,6 +275,7 @@
 
             </div>
         </div>
+
         <script src="index.js"></script>
 
     </body>
